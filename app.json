@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name" : "Meilleures blagues du web",
+    "slug": "MeilleuresBlagues",
+    "description" : "Attention cette app pourrait provoquer des crises de fou rires",
+    "icon" : "./img/logo.png",
+    "sdkVersion": "21.0.0",
+    "androidStatusBar": {
+      "backgroundColor": "#233b6d"
+
+    },
+   "splash": {
+  "image": "./img/splash.png",
+  "backgroundColor": "#233b6d"
+},
+    "ios": {
+    "bundleIdentifier": "com.Sidibe.MeilleuresBlagues"
+  },
+  "android": {
+    "package": "com.Sidibe.MeilleuresBlagues"
+  }
+
+  }
+}
