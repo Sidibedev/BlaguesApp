@@ -38,8 +38,8 @@ export default class ShareButton extends Component {
 
   render() {
     return (
-      <Button transparent onPress={this.share(this.props.blague , this.props.categorie)}>
-                      <Icon active name="md-share" />
+      <Button transparent  onPress={this.share(this.props.blague , this.props.categorie)}>
+                      <Icon  active name="md-share" />
 
       </Button>
     );

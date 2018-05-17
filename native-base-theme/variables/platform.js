@@ -141,9 +141,9 @@ export default {
   tabBarTextColor: platform === "ios" ? "#233b6d" : "#233b6d",
   tabBarTextSize: platform === "ios" ? 14 : 11,
   activeTab: platform === "ios" ? "orange" : "orange",
-  sTabBarActiveTextColor: "orange",
+  sTabBarActiveTextColor: "#233b6d",
   tabBarActiveTextColor: platform === "ios" ? "orange" : "orange",
-  tabActiveBgColor: platform === "ios" ? "#F7F7F7" : "#F7F7F7",
+  tabActiveBgColor: platform === "ios" ? "#fdfdfd" : "#fdfdfd",
 
   // Tab
   tabDefaultBg: platform === "ios" ? "#F8F8F8" : "#3F51B5",
@@ -155,7 +155,7 @@ export default {
 
   // Header
   toolbarBtnColor: platform === "ios" ? "#007aff" : "#fff",
-  toolbarDefaultBg: platform === "ios" ? "#233b6d" : "#233b6d",
+  toolbarDefaultBg: platform === "ios" ? "orange" : "orange",
   toolbarHeight: platform === "ios" ? (isIphoneX ? 88 : 64) : 56,
   toolbarIconSize: platform === "ios" ? 20 : 22,
   toolbarSearchIconSize: platform === "ios" ? 20 : 23,

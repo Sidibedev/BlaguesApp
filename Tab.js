@@ -10,6 +10,8 @@ import Blaguedujour from './Screens/Blaguedujour'
 import Allblagues from './Screens/Allblagues'
 import Categorie from './Screens/Categorie'
 import Favoris from './Screens/Favoris'
+import Parametres from './Screens/Parametres'
+import FavContainer from './containers/FavContainer'
 
 
 
@@ -17,10 +19,10 @@ import Favoris from './Screens/Favoris'
 export default (MainScreenNavigator = TabNavigator({
 
   Blaguedujour : {screen : Blaguedujour},
-  Allblagues : {screen : Allblagues},
   Categorie : {screen : Categorie},
-
-  Favoris : {screen : Favoris}
+  Allblagues : {screen : Allblagues},
+  FavContainer : {screen : FavContainer},
+  Parametres : {screen : Parametres}
 
 },
 
@@ -31,7 +33,8 @@ export default (MainScreenNavigator = TabNavigator({
   swipeEnabled : true,
   tabBarComponent: props => {
     return (
-        <StyleProvider style={getTheme(platform)}>
+
+      <StyleProvider style={getTheme(platform)}>
       <Footer>
 
         <FooterTab>
@@ -42,39 +45,54 @@ export default (MainScreenNavigator = TabNavigator({
               >
                 <Icon name="md-calendar" />
 
+
               </Button>
 
 
-            <Button
-                            vertical
-                            active={props.navigationState.index === 1}
-                            onPress={() => props.navigation.navigate("Allblagues")}
-                            >
-                              <Icon name="md-happy" />
 
-          </Button>
 
               <Button
 
               vertical
-              active={props.navigationState.index === 2}
+              active={props.navigationState.index === 1}
               onPress={() => props.navigation.navigate("Categorie")}
 
               >
                 <Icon name="md-apps" />
 
+
               </Button>
 
+              <Button
+                              vertical
+                              active={props.navigationState.index === 2}
+                              onPress={() => props.navigation.navigate("Allblagues")}
+                              >
+                                <Icon name="md-happy" />
+
+
+            </Button>
 
 
               <Button vertical active={props.navigationState.index === 3}
-              onPress={() => props.navigation.navigate("Favoris")}>
+              onPress={() => props.navigation.navigate("FavContainer")}>
 
 
 
                 <Icon name="md-heart" />
 
+
               </Button>
+              <Button
+              vertical
+              active={props.navigationState.index === 4}
+              onPress={() => props.navigation.navigate("Parametres")}
+              >
+                <Icon name="md-settings" />
+
+              </Button>
+
+
         </FooterTab>
 
 </Footer>

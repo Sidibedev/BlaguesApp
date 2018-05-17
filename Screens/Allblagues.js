@@ -34,6 +34,8 @@ export default class Allblagues extends React.PureComponent{
         }
     componentDidMount() {
         this.fetchBlagues()
+
+
       }
 
     fetchBlagues () {
@@ -56,7 +58,7 @@ export default class Allblagues extends React.PureComponent{
         if (this.state.connexionerror === true) {
 
           return (
-              <NetworkError />
+              <NetworkError content="Les blagues ne sont pas disponibles" />
           )
 
         }

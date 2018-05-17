@@ -75,7 +75,7 @@ if (this.state.connexionerror === true) {
 
   return (
 
-      <NetworkError hide={this.state.isConnected}/>
+      <NetworkError hide={this.state.isConnected} content="La blague du jour n'est pas disponible"/>
   )
 
 }
@@ -188,7 +188,7 @@ render() {
    <StyleProvider style={getTheme(platform)}>
      <Container>
 
-          <Header style={{backgroundColor: "#233b6d"}}>
+          <Header>
                 <Body>
                     <Title style={{color : 'white'}}>La blague du jour </Title>
                 </Body>
@@ -241,6 +241,8 @@ render() {
 
               );
             })}
+
+
 
 
 

@@ -19,15 +19,15 @@ export default class Categorie extends Component {
 
 
             const items = [
-                { name: 'femmes', code: '#ff5a94' }, { name: 'toto', code: '#2ecc71' },
+
+                { name: 'blague courte', code: '#f1c40f' }, { name: 'alcool', code: '#e67e22' },
+                { name: 'informatique', code: '#e74c3c' }, { name: 'foot', code: '#008080' },
+                { name: 'ecole', code: '#6d63ae' }, { name: 'Blagues sur les fous', code: '#f39c12' },
+                { name: 'hommes', code: '#7f1184' }, { name: 'politique', code: '#c0392b' },{ name: 'femmes', code: '#ff5a94' }, { name: 'toto', code: '#2ecc71' },
                 { name: 'enfants', code: '#3498db' }, { name: 'blague ta mère', code: '#9b59b6' },
                 { name: 'pays', code: '#34495e' }, { name: 'armée', code: '#16a085' },
                 { name: 'mariage', code: '#27ae60' }, { name: 'vieux', code: '#2980b9' },
                 { name: 'travail', code: '#8e44ad' }, { name: 'religion', code: '#2c3e50' },
-                { name: 'blague courte', code: '#f1c40f' }, { name: 'alcool', code: '#e67e22' },
-                { name: 'informatique', code: '#e74c3c' }, { name: 'foot', code: '#008080' },
-                { name: 'ecole', code: '#6d63ae' }, { name: 'Blagues sur les fous', code: '#f39c12' },
-                { name: 'hommes', code: '#d35400' }, { name: 'politique', code: '#c0392b' },
 
               ];
 
@@ -35,7 +35,7 @@ export default class Categorie extends Component {
                 <StyleProvider style={getTheme(platform)}>
                   <Container>
 
-                       <Header style={{backgroundColor: "#233b6d"}}>
+                       <Header>
                              <Body>
                                  <Title style={{color : 'white'}}>Categories</Title>
                              </Body>

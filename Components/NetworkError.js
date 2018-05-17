@@ -24,7 +24,8 @@ export default class NetworkError extends Component {
 
                        <Image  source={require('../img/nointernet.png')} style={{width : 200 , height : 200 , marginTop: 70}}/>
 
-                       <Text style={{marginTop: 10 ,fontSize: 18, fontWeight: '400', color: "grey"}}> Aucune putaine de connexion internet.</Text>
+                     <Text style={{marginTop: 10 ,fontSize: 18, fontWeight: '400', color: "grey"}}> Aucune Connexion internet</Text>
+                   <Text style={{marginTop: 5 ,fontSize: 13, fontWeight: '400', color: "grey"}}> {this.props.content}</Text>
 
 
 

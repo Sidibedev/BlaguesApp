@@ -62,7 +62,7 @@ export default class Blague extends React.Component {
       if (this.state.connexionerror === true) {
 
         return (
-            <NetworkError />
+            <NetworkError content="Les blagues ne sont pas disponibles" />
         )
 
       }
@@ -136,7 +136,10 @@ handlemoreBlagues = () => {
                     <Header>
 
                       <Left>
-                        <Icon name="arrow-back"  style={{color: "white"}} onPress = {() => this.props.navigation.goBack()}/>
+                          <Button transparent  onPress = {() => this.props.navigation.goBack()}>
+                            <Text style={{color: "white"}}>Retour</Text>
+                          </Button>
+
                       </Left>
 
                     <Body>
@@ -196,7 +199,7 @@ var styles = StyleSheet.create({
            height: '30%',
           margin: 10,
            backgroundColor: 'white',
-           shadowColor: 'grey',
+           shadowColor: '#bfbfbf',
            shadowOffset: {
              width: 0,
              height: 7

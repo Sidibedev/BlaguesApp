@@ -3,7 +3,7 @@ import {
   AppRegistry,    // Registers the app
   StatusBar,      // Allows to hide the satatus bar
 } from 'react-native';
-import Screens from './Screens';
+import Tab from './Tab';
 
 export default class Onboarding extends Component {
   componentDidMount() {
@@ -12,7 +12,7 @@ export default class Onboarding extends Component {
   }
   render() {
     return (
-      <Screens />
+      <Tab />
     );
   }
 }

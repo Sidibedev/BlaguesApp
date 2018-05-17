@@ -12,6 +12,8 @@ import Allblagues from './Screens/Allblagues'
 import Categorie from './Screens/Categorie'
 import Favoris from './Screens/Favoris'
 import Blague from './Screens/Blague'
+import Parametres from './Screens/Parametres'
+import FavContainer from './containers/FavContainer'
 
 
 
@@ -22,16 +24,22 @@ const App =  StackNavigator({
 
 
   },
+  FavContainer : {
+    screen: FavContainer ,
+
+
+  },
+  Parametres : {
+    screen: Parametres ,
+
+
+  },
   Blague : {
     screen: Blague ,
 
 
   },
-  Favoris : {
-    screen: Favoris ,
 
-
-  },
   Categorie : {
     screen: Categorie ,
 

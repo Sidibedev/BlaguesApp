@@ -8,13 +8,14 @@ import {
 } from 'react-native';
 import ShareButton from '../Components/ShareButton'
 import FavButton from '../Components/FavButton'
+import ButtonContainer from '../containers/ButtonContainer'
 import ElevatedView from 'react-native-elevated-view'
 class MylistItem extends React.PureComponent {
     render() {
     return (
       <ElevatedView elevation={10} style={styles.stayElevated} >
 
-                <Text style={{textAlign: 'center' , marginTop: 5 , marginLeft: 5 , fontSize: 16}}>
+                <Text selectable={true} style={{textAlign: 'center' , marginTop: 5 , marginLeft: 5 , fontSize: 16}}>
                       {this.props.blague}
                 </Text>
 
@@ -24,7 +25,7 @@ class MylistItem extends React.PureComponent {
 
                   <ShareButton blague={this.props.blague} categorie={this.props.categorie} />
 
-                  <FavButton blague={this.props.blague} categorie={this.props.categorie}  />
+                <ButtonContainer blague={this.props.blague} categorie={this.props.categorie}  />
 
                 </View>
       </ElevatedView>
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
        height: '30%',
       margin: 10,
        backgroundColor: 'white',
-       shadowColor: 'grey',
+       shadowColor: '#bfbfbf',
        shadowOffset: {
          width: 0,
          height: 7
